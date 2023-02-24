@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pb:win:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 greet"
+    "pb:win:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 greet calculator",
+    "greet:client": "node greet/client/index.js",
+    "greet:server": "node greet/server/index.js",
+    "calculator:server": "node calculator/server/index.js",
+    "calculator:client": "node calculator/client/index.js"
   },
   "keywords": [],
   "author": "",

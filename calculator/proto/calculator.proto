@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package calculator;
+
+
+
+message AddRequest{
+    int32 first_number = 1;
+    int32 second_number = 2;
+}
+
+message AddResponse{
+    int32 result = 1;
+}
+
+service Calculator {
+  rpc Add(AddRequest) returns (AddResponse) ;
+  
+}
